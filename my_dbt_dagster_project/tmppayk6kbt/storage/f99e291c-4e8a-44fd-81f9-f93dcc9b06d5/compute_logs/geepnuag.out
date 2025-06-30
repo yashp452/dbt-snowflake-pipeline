@@ -1,0 +1,62 @@
+Running with dbt=1.7.19
+Registered adapter: snowflake=1.7.1
+Found 8 models, 1 snapshot, 15 tests, 1 source, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 24 START sql view model DEV.src_crm ....................................... [RUN]
+1 of 24 OK created sql view model DEV.src_crm .................................. [[32mSUCCESS 1[0m in 0.84s]
+2 of 24 START sql view model DEV.src_devices ................................... [RUN]
+2 of 24 OK created sql view model DEV.src_devices .............................. [[32mSUCCESS 1[0m in 0.99s]
+3 of 24 START sql view model DEV.src_rev ....................................... [RUN]
+3 of 24 OK created sql view model DEV.src_rev .................................. [[32mSUCCESS 1[0m in 0.65s]
+4 of 24 START sql table model DEV.dim_crm ...................................... [RUN]
+4 of 24 OK created sql table model DEV.dim_crm ................................. [[32mSUCCESS 1[0m in 33.77s]
+5 of 24 START sql table model DEV.dim_device ................................... [RUN]
+5 of 24 OK created sql table model DEV.dim_device .............................. [[32mSUCCESS 1[0m in 7.85s]
+6 of 24 START sql table model DEV.dim_date ..................................... [RUN]
+6 of 24 OK created sql table model DEV.dim_date ................................ [[32mSUCCESS 1[0m in 1.75s]
+7 of 24 START test accepted_values_dim_crm_gender__male__female__others ........ [RUN]
+7 of 24 PASS accepted_values_dim_crm_gender__male__female__others .............. [[32mPASS[0m in 2.84s]
+8 of 24 START test not_null_dim_crm_customer_id ................................ [RUN]
+8 of 24 PASS not_null_dim_crm_customer_id ...................................... [[32mPASS[0m in 0.70s]
+9 of 24 START test not_null_dim_crm_msisdn ..................................... [RUN]
+9 of 24 PASS not_null_dim_crm_msisdn ........................................... [[32mPASS[0m in 0.86s]
+10 of 24 START test not_null_dim_crm_system_status ............................. [RUN]
+10 of 24 PASS not_null_dim_crm_system_status ................................... [[32mPASS[0m in 0.58s]
+11 of 24 START test not_null_dim_crm_value_segment ............................. [RUN]
+11 of 24 PASS not_null_dim_crm_value_segment ................................... [[32mPASS[0m in 0.52s]
+12 of 24 START test unique_dim_crm_customer_id ................................. [RUN]
+12 of 24 PASS unique_dim_crm_customer_id ....................................... [[32mPASS[0m in 2.26s]
+13 of 24 START test valid_dob .................................................. [RUN]
+13 of 24 FAIL 4 valid_dob ...................................................... [[31mFAIL 4[0m in 0.79s]
+14 of 24 START test not_null_dim_device_brand_name ............................. [RUN]
+14 of 24 PASS not_null_dim_device_brand_name ................................... [[32mPASS[0m in 0.71s]
+15 of 24 START test not_null_dim_device_device_id .............................. [RUN]
+15 of 24 PASS not_null_dim_device_device_id .................................... [[32mPASS[0m in 0.68s]
+16 of 24 START test not_null_dim_device_imei_tac ............................... [RUN]
+16 of 24 PASS not_null_dim_device_imei_tac ..................................... [[32mPASS[0m in 0.66s]
+17 of 24 START test not_null_dim_device_model_name ............................. [RUN]
+17 of 24 PASS not_null_dim_device_model_name ................................... [[32mPASS[0m in 0.66s]
+18 of 24 START test not_null_dim_device_msisdn ................................. [RUN]
+18 of 24 PASS not_null_dim_device_msisdn ....................................... [[32mPASS[0m in 0.58s]
+19 of 24 START test not_null_dim_device_os_name ................................ [RUN]
+19 of 24 PASS not_null_dim_device_os_name ...................................... [[32mPASS[0m in 0.57s]
+20 of 24 START test not_null_dim_device_os_vendor .............................. [RUN]
+20 of 24 PASS not_null_dim_device_os_vendor .................................... [[32mPASS[0m in 0.69s]
+21 of 24 START test unique_dim_device_device_id ................................ [RUN]
+21 of 24 PASS unique_dim_device_device_id ...................................... [[32mPASS[0m in 1.44s]
+22 of 24 SKIP relation dev.scd_dim_crm ......................................... [[33mSKIP[0m]
+23 of 24 SKIP relation DEV.customer_device_bridge .............................. [[33mSKIP[0m]
+24 of 24 SKIP relation DEV.fact_rev ............................................ [[33mSKIP[0m]
+
+Finished running 3 view models, 5 table models, 15 tests, 1 snapshot in 0 hours 1 minutes and 2.45 seconds (62.45s).
+
+[31mCompleted with 1 error and 0 warnings:[0m
+
+[31mFailure in test valid_dob (tests/valid_dob.sql)[0m
+  Got 4 results, configured to fail if != 0
+
+  compiled Code at target/dbtsnow_dbt_assets-f99e291-be276ca/compiled/dbtsnow/tests/valid_dob.sql
+
+Done. PASS=20 WARN=0 ERROR=1 SKIP=3 TOTAL=24

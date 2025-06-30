@@ -1,0 +1,14 @@
+Running with dbt=1.7.19
+Registered adapter: snowflake=1.7.1
+Found 8 models, 1 snapshot, 15 tests, 1 source, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 1 START sql table model DEV.customer_device_bridge ........................ [RUN]
+1 of 1 OK created sql table model DEV.customer_device_bridge ................... [[32mSUCCESS 1[0m in 3.36s]
+
+Finished running 1 table model in 0 hours 0 minutes and 4.98 seconds (4.98s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1

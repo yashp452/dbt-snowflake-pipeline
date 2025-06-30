@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: DBT_SNOWFLAKE
+    schema: raw
+    tables:
+      - name: CRM
+        identifier: CRM

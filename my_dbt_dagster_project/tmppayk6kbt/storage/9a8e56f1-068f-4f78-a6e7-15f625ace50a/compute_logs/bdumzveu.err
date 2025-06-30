@@ -1,0 +1,66 @@
+[32m2025-06-08 02:39:17 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - LOGS_CAPTURED - Started capturing logs in process (pid: 58844).
+[32m2025-06-08 02:39:17 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_START - Started execution of step "dbtsnow_dbt_assets".
+[32m2025-06-08 02:39:17 +0530[0m - dagster - [34mINFO[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - dbtsnow_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+[32m2025-06-08 02:39:17 +0530[0m - dagster - [34mINFO[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - dbtsnow_dbt_assets - Copying `/Users/yashpadiyar/dbt_pipeline/dbtsnow/target/partial_parse.msgpack` to `/Users/yashpadiyar/dbt_pipeline/dbtsnow/target/dbtsnow_dbt_assets-9a8e56f-7d4dd94/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2025-06-08 02:39:17 +0530[0m - dagster - [34mINFO[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - dbtsnow_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+[32m2025-06-08 02:39:21 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "src_crm" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:22 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value src_crm.
+[32m2025-06-08 02:39:22 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "src_devices" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:22 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value src_devices.
+[32m2025-06-08 02:39:23 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "src_rev" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:23 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value src_rev.
+[32m2025-06-08 02:39:44 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "dim_crm" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:44 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_crm.
+[32m2025-06-08 02:39:48 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "dim_device" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:48 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_device.
+[32m2025-06-08 02:39:50 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_OUTPUT - Yielded output "dim_date" of type "Nothing". (Type check passed).
+[32m2025-06-08 02:39:50 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_MATERIALIZATION - Materialized value dim_date.
+[32m2025-06-08 02:39:51 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:51 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:52 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:52 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:53 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:54 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:54 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:55 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:56 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:56 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:57 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:57 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:57 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:58 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:59 +0530[0m - dagster - [34mDEBUG[0m - materialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbtsnow_dbt_assets
+[32m2025-06-08 02:39:59 +0530[0m - dagster - [34mERROR[0m - [31mmaterialize_dbt_models - 9a8e56f1-068f-4f78-a6e7-15f625ace50a - 58844 - dbtsnow_dbt_assets - STEP_FAILURE - Execution of step "dbtsnow_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process failed with exit code 1. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /Users/yashpadiyar/dbt_pipeline/dbtsnow/target/dbtsnow_dbt_assets-9a8e56f-7d4dd94/dbt.log.
+
+Errors parsed from dbt logs:
+13 of 24 FAIL 4 valid_dob ...................................................... [[31mFAIL 4[0m in 0.62s]
+[31mFailure in test valid_dob (tests/valid_dob.sql)[0m
+  Got 4 results, configured to fail if != 0
+
+Stack Trace:
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_plan.py", line 286, in dagster_event_sequence_for_step
+    for step_event in check.generator(step_events):
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 487, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 169, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 95, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 212, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 181, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 467, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/yashpadiyar/dbt_pipeline/my_dbt_dagster_project/my_dbt_dagster_project/assets.py", line 9, in dbtsnow_dbt_assets
+    yield from dbt.cli(["build"], context=context).stream()
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 390, in stream
+    for event in self.stream_raw_events():
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 426, in stream_raw_events
+    self._raise_on_error()
+  File "/Users/yashpadiyar/dbt_pipeline/dbtsnow/venv/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 484, in _raise_on_error
+    raise DagsterDbtCliRuntimeError(
+[0m

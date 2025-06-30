@@ -1,0 +1,56 @@
+Running with dbt=1.7.19
+Registered adapter: snowflake=1.7.1
+Found 7 models, 1 snapshot, 14 tests, 1 source, 0 exposures, 0 metrics, 546 macros, 0 groups, 0 semantic models
+
+Concurrency: 1 threads (target='dev')
+
+1 of 22 START sql view model DEV.src_crm ....................................... [RUN]
+1 of 22 OK created sql view model DEV.src_crm .................................. [[32mSUCCESS 1[0m in 0.94s]
+2 of 22 START sql view model DEV.src_devices ................................... [RUN]
+2 of 22 OK created sql view model DEV.src_devices .............................. [[32mSUCCESS 1[0m in 0.83s]
+3 of 22 START sql view model DEV.src_rev ....................................... [RUN]
+3 of 22 OK created sql view model DEV.src_rev .................................. [[32mSUCCESS 1[0m in 1.08s]
+4 of 22 START snapshot dev.scd_crm ............................................. [RUN]
+4 of 22 OK snapshotted dev.scd_crm ............................................. [[32mSUCCESS 2[0m in 28.46s]
+5 of 22 START sql table model DEV.dim_crm ...................................... [RUN]
+5 of 22 OK created sql table model DEV.dim_crm ................................. [[32mSUCCESS 1[0m in 12.52s]
+6 of 22 START sql table model DEV.dim_device ................................... [RUN]
+6 of 22 OK created sql table model DEV.dim_device .............................. [[32mSUCCESS 1[0m in 1.97s]
+7 of 22 START sql table model DEV.dim_date ..................................... [RUN]
+7 of 22 OK created sql table model DEV.dim_date ................................ [[32mSUCCESS 1[0m in 5.76s]
+8 of 22 START test accepted_values_dim_crm_gender__male__female__other ......... [RUN]
+8 of 22 PASS accepted_values_dim_crm_gender__male__female__other ............... [[32mPASS[0m in 0.73s]
+9 of 22 START test not_null_dim_crm_customer_id ................................ [RUN]
+9 of 22 PASS not_null_dim_crm_customer_id ...................................... [[32mPASS[0m in 0.55s]
+10 of 22 START test not_null_dim_crm_msisdn .................................... [RUN]
+10 of 22 PASS not_null_dim_crm_msisdn .......................................... [[32mPASS[0m in 0.46s]
+11 of 22 START test not_null_dim_crm_system_status ............................. [RUN]
+11 of 22 PASS not_null_dim_crm_system_status ................................... [[32mPASS[0m in 0.59s]
+12 of 22 START test not_null_dim_crm_value_segment ............................. [RUN]
+12 of 22 PASS not_null_dim_crm_value_segment ................................... [[32mPASS[0m in 0.51s]
+13 of 22 START test unique_dim_crm_customer_id ................................. [RUN]
+13 of 22 PASS unique_dim_crm_customer_id ....................................... [[32mPASS[0m in 1.50s]
+14 of 22 START test valid_dob .................................................. [RUN]
+14 of 22 PASS valid_dob ........................................................ [[32mPASS[0m in 0.45s]
+15 of 22 START test not_null_dim_device_brand_name ............................. [RUN]
+15 of 22 PASS not_null_dim_device_brand_name ................................... [[32mPASS[0m in 0.55s]
+16 of 22 START test not_null_dim_device_device_id .............................. [RUN]
+16 of 22 PASS not_null_dim_device_device_id .................................... [[32mPASS[0m in 0.49s]
+17 of 22 START test not_null_dim_device_model_name ............................. [RUN]
+17 of 22 PASS not_null_dim_device_model_name ................................... [[32mPASS[0m in 0.53s]
+18 of 22 START test not_null_dim_device_msisdn ................................. [RUN]
+18 of 22 PASS not_null_dim_device_msisdn ....................................... [[32mPASS[0m in 0.48s]
+19 of 22 START test not_null_dim_device_os_name ................................ [RUN]
+19 of 22 PASS not_null_dim_device_os_name ...................................... [[32mPASS[0m in 0.50s]
+20 of 22 START test not_null_dim_device_os_vendor .............................. [RUN]
+20 of 22 PASS not_null_dim_device_os_vendor .................................... [[32mPASS[0m in 0.47s]
+21 of 22 START test unique_dim_device_device_id ................................ [RUN]
+21 of 22 PASS unique_dim_device_device_id ...................................... [[32mPASS[0m in 0.82s]
+22 of 22 START sql incremental model DEV.fact_rev .............................. [RUN]
+22 of 22 OK created sql incremental model DEV.fact_rev ......................... [[32mSUCCESS 0[0m in 3.54s]
+
+Finished running 3 view models, 1 snapshot, 3 table models, 14 tests, 1 incremental model in 0 hours 1 minutes and 6.31 seconds (66.31s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=22 WARN=0 ERROR=0 SKIP=0 TOTAL=22

@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: dim_crm
+    description: "Customer dimension table containing customer demographic and segmentation data."
+    columns:
+      - name: customer_id
+        description: "Surrogate key for the customer."
+        tests:
+          - unique
+          - not_null
+
+      - name: msisdn
+        description: "Mobile number identifier."
+        tests:
+          - not_null
+
+      - name: gender
+        description: "Gender of the customer."
+        tests:
+          - accepted_values:
+              values: ['male', 'female', 'other']
+
+      
+
+      - name: system_status
+        description: "Status of the mobile service."
+        tests:
+          - not_null
+
+     
+
+      - name: value_segment
+        description: "Business value segment for the customer."
+        tests:
+          - not_null
+
+  - name: dim_device
+    description: "Device dimension table containing device details."
+    columns:
+      - name: device_id
+        description: "Surrogate key for the device."
+        tests:
+          - unique
+          - not_null
+
+      - name: msisdn
+        description: "Mobile number identifier."
+        tests:
+          - not_null
+
+
+      - name: brand_name
+        description: "Brand of the device."
+        tests:
+          - not_null
+
+      - name: model_name
+        description: "Model of the device."
+        tests:
+          - not_null
+
+      - name: os_name
+        description: "Operating system of the device."
+        tests:
+          - not_null
+
+      - name: os_vendor
+        description: "Vendor of the device OS."
+        tests:
+          - not_null
