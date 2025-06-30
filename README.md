@@ -1,2 +1,1 @@
-This is a dbt-snowflake project for a telecommunication company.
-I have used Dagster for orchestration
+This project leverages dbt and Snowflake to build a scalable analytics platform for a telecommunication company, transforming raw data into clean, analysis-ready models. It employs modular data modeling, robust testing, and historical tracking with SCD Type 2 to ensure data integrity and business value. The entire pipeline is orchestrated using Dagster for reliable, automated, and observable end-to-end workflows.
